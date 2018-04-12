@@ -1,0 +1,22 @@
+.index-logo{
+	text-align:center;
+	margin:auto;
+	font-size:2.5em;
+}
+
+.login-form{
+	background:none;
+	margin:auto;
+}
+
+.index{
+	background-image:url('../../images/indexBG.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+@media only screen and (min-device-width: 481px) {
+.login-form{
+	width:50%;
+	}
+}
