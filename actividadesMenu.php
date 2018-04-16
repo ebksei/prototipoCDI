@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Menú</h1>
+                    <h1>Actividades</h1>
                 </div>
             </div>
         </div>
@@ -35,13 +35,10 @@
         <div class="content mt-3">
             <div class="login-form">
                     <div style="margin-bottom:20px">
-                       <a  href="actividadesMenu.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Actividades</button></a></br>
+                       <a  href="listaActividades.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Disponibles</button></a></br>
                     </div>
                     <div style="margin-bottom:20px">
-                        <a  href="productosMenu.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Productos</button></a></br>
-                    </div>
-                    <div style="margin-bottom:20px">
-                        <a  href="pagos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Pagos Pendientes</button></a></br>
+                        <a  href="listaReservadas.html"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Reservadas</button></a></br>
                     </div>
                 </div>
             
