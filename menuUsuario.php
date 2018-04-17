@@ -38,7 +38,7 @@
                        <a  href="actividadesMenu.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Actividades</button></a></br>
                     </div>
                     <div style="margin-bottom:20px">
-                        <a  href="productosMenu.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Productos</button></a></br>
+                        <a  href="productos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Productos</button></a></br>
                     </div>
                     <div style="margin-bottom:20px">
                         <a  href="pagos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Pagos Pendientes</button></a></br>

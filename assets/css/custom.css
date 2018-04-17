@@ -15,6 +15,18 @@
 	background-position:center;
 }
 
+.productoImg{
+	width:100px;
+	height:100px;
+	background-color:white;
+	border: 1px black solid;
+	margin:auto;
+}
+
+.dataTables_length, .dataTables_filter{
+	padding-left:5%;
+}
+
 @media only screen and (min-device-width: 481px) {
 .login-form{
 	width:50%;
