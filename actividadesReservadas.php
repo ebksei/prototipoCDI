@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Carrito de Compra</h1>
+                    <h1>Actividades Reservadas</h1>
                 </div>
             </div>
         </div>
@@ -37,34 +37,25 @@
              <table class="table">
                               <thead>
                                 <tr>
-                                  <th scope="col">Artículo</th>
-                                  <th scope="col">Precio</th>
-                                  <th scope="col">Eliminar</th>
+                                  <th scope="col">Actividad</th>
+                                  <th scope="col">Cancelar</th>
                               </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>Sasha la patata</td>
-                              <td>8€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
+                              <td>Matar titanes</td>
+                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-times-circle"></i></button></td>
                           </tr>
                           <tr>
-                              <td>Barritas titán</td>
-                              <td>5€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
+                              <td>Destrozar la cancha</td>
+                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-times-circle"></i></button></td>
                           </tr>
                           <tr>
-                              <td>Cinturón de soldado</td>
-                              <td>3€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
-                          </tr>
-                          <tr>
-                              <td style="font-weight:bolder">Total:</td>
-                              <td style="font-weight:bolder" colspan="2">16€</td>
+                              <td>Entrenamiento</td>
+                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-times-circle"></i></button></td>
                           </tr>
                       </tbody>
                   </table>
-                  <div class="text-center"><button class="btn btn-success">Pagar</button></div>
 
 
         </div> <!-- .content -->
