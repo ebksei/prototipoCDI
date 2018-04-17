@@ -4,7 +4,7 @@
     
     <?php echo file_get_contents('rsc/head.html'); ?> 
 
-    <title>SNK - Título</title>
+    <title>SNK Gimnasios</title>
 
 </head>
 <body>
@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Productos</h1>
+                    <h1>Actividades disponibles</h1>
                 </div>
             </div>
         </div>
@@ -39,48 +39,26 @@
                         <div class="card">
                             <div class="card-body">
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
-                                    <thead>
-                                        <th>
-                                            <td>Descripción</td>
-                                        </th>
-                                    </thead>
+                                <thead>
+                                    <th>
+                                    </th>
+                                </thead>
                                     <tbody>
                                       <tr>
                                         <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
-                                        </td>
-                                        <td>
-                                            <h4>Insignia del gimnasio</h4>
+                                            <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Matar titanes</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
-                                                8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
+                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
+                                                <button type="button" class="btn btn-success"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>
                                       <tr>
                                         <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
-                                        </td>
-                                        <td>
-                                            <h4>Barritas titán</h4>
+                                            <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
-                                                8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
-                                        </td>
-                                        <td>
-                                            <h4>Shasha la patata</h4>
-                                            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
-                                                8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
+                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
+                                                <button type="button" class="btn btn-success"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>
@@ -100,7 +78,7 @@
     <?php echo file_get_contents('rsc/scripts.html'); ?> 
     <script type="text/javascript">
         jQuery(document).ready(function() {
-          jQuery('#bootstrap-data-table').DataTable();          
+          jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
         } );
     </script>

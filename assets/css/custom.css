@@ -22,13 +22,14 @@
 	border: 1px black solid;
 	margin:auto;
 }
+@media only screen and (max-device-width: 480px){	
 
-.dataTables_length, .dataTables_filter{
-	padding-left:5%;
-}
-
-@media only screen and (min-device-width: 481px) {
-.login-form{
-	width:50%;
+	.dataTables_length, .dataTables_filter{
+		padding-left:5%;
 	}
+}
+@media only screen and (min-device-width: 481px) {
+	.login-form{
+		width:50%;
+		}
 }
