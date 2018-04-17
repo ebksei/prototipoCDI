@@ -32,14 +32,28 @@
         var expires = "expires=" + d.toGMTString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
       }
-      function setNombre(){
+      function guardarCookies(){
+
+        alert ("nombre =" +nombre+"\n correo = "+mail+"\n clave = "+clave+"\n direccion = "+direccion+"\n telefono = "+telefono+"\n cbanc = "+cBan);
+
+      }
+      function guardarDatos(){
         var nombre = document.getElementById("nombre").value;
-        setCookie("nombre",nombre,30);
+          setCookie("nombre",nombre,30);
+          var mail = document.getElementById("email").value;
+          setCookie("email",mail,30);
+          var clave = document.getElementById("clave").value;
+          setCookie("clave",clave,30);
+          var direccion = document.getElementById("direccion").value;
+          setCookie("direccion",direccion,30);
+          var telefono = document.getElementById("tel").value;
+          setCookie("tel",telefono,30);
+          var cBan = document.getElementById("banco").value;
+          setCookie("banco",cBan,30);
+          alert ("nombre =" +nombre+"\n correo = "+mail+"\n clave = "+clave+"\n direccion = "+direccion+"\n telefono = "+telefono+"\n cbanc = "+cBan);
+
       }
-      function setCorreo(){
-        var correo = document.getElementById("correo").value;
-        setCookie("correo",correo,30);
-      }
+
 
       function getCookie(cname) {
           var name = cname + "=";
@@ -60,7 +74,7 @@
         if (user != "") {
             alert("Welcome again " + user);
         } else {
-            user = prompt("No se ha guardado", "");
+            alert("No se ha guardado");
         }
       }
     </script>
@@ -79,27 +93,27 @@
                 <div class="login-form">
                         <div class="form-group">
                             <label>User Name</label>
-                            <input type="nombre" class="form-control" placeholder="User Name" id="nombre" onchange="setNombre()" >
+                            <input id="nombre" class="form-control" placeholder="User Name"  >
                         </div>
                         <div class="form-group">
                             <label>Email address</label>
-                            <input type="email" class="form-control" placeholder="Email" id="email" onchange="setCorreo()">
+                            <input id="email" class="form-control" placeholder="Email" >
                         </div>
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password" id="clave">
                         </div>
                         <div class="form-group">
                             <label>Direccion</label>
-                            <input type="text" class="form-control" placeholder="Address" id="correo">
+                            <input id="direccion" class="form-control" placeholder="Direccion" >
                         </div>
                         <div class="form-group">
                             <label>Telefono</label>
-                            <input type="password" class="form-control" placeholder="Phone">
+                            <input type="Phone" class="form-control" placeholder="Phone" id="tel">
                         </div>
                         <div class="form-group">
                             <label>Cuanta Bancaria</label>
-                            <input type="password" class="form-control" placeholder="Useless">
+                            <input type="text" class="form-control" placeholder="Useless" id="banco">
                         </div>
                         <div class="form-group">
                           <h2>Selecciona tarifa</h2>
@@ -123,7 +137,7 @@
                             <p>precio:</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
-                                <input type="radio" id="radio1" name="radios" value="option1" class="form-check-input">Mikasa
+                                <input type="radio" id="radio2" name="radios" value="option1" class="form-check-input">Mikasa
                               </label>
                             </div>
                           </div>
@@ -135,7 +149,7 @@
                             <p>precio:</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
-                                <input type="radio" id="radio1" name="radios" value="option1" class="form-check-input">Levi
+                                <input type="radio" id="radio3" name="radios" value="option1" class="form-check-input">Levi
                               </label>
                             </div>
                           </div>
@@ -147,7 +161,7 @@
                             <p>precio:</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
-                                <input type="radio" id="radio1" name="radios" value="option1" class="form-check-input">Titánica
+                                <input type="radio" id="radio4" name="radios" value="option1" class="form-check-input">Titánica
                               </label>
                             </div>
                           </div>
@@ -245,8 +259,7 @@
                                 <input type="checkbox"> Acepto politica de privacidad
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Registrarse</button>
-
+                        <a href="inicioUsuario.php"><button onclick="guardarDatos()" class="btn btn-primary btn-flat m-b-30 m-t-30" >Registrarse</button></a>
                         <div class="register-link m-t-15 text-center">
                             <p>¿Ya eres miembro de SNK? <a href="login.html">Iniciar Sesión</a></p>
                         </div>
@@ -263,5 +276,5 @@
     <script src="assets/js/main.js"></script>
 
 
-</body onload="checkCookie()">
+</body>
 </html>
