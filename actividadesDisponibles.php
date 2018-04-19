@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Actividades disponibles</h1>
+                    <h1><i class="fa fa-dribbble" style="margin-right:10px"></i>Actividades disponibles</h1>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                                             <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Matar titanes</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-success"><i class="fa fa-calendar-o"></i> Inscribirse</button>
+                                                <button type="button" class="btn btn-success" style="padding:20px"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>
@@ -58,7 +58,7 @@
                                             <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-success"><i class="fa fa-calendar-o"></i> Inscribirse</button>
+                                                <button type="button" class="btn btn-success" style="padding:20px"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>

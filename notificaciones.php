@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Notificaciones</h1>
+                    <h1>Notificaciones <button class="btn btn-danger" style="border-radius:50px">3</button></h1>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
 
 			<div class="card border border-success">
                 <div class="card-header">
-                    <strong class="card-title">Título Notificación</strong>
+                    <strong class="card-title text-right">20/5/2018</strong>
                 </div>
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -44,7 +44,7 @@
             </div>
             <div class="card border border-success">
                 <div class="card-header">
-                    <strong class="card-title">Título Notificación</strong>
+                    <strong class="card-title text-right">1/5/2018</strong>
                 </div>
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -52,7 +52,7 @@
             </div>
             <div class="card border border-success">
                 <div class="card-header">
-                    <strong class="card-title">Título Notificación</strong>
+                    <strong class="card-title text-right">2/3/2018</strong>
                 </div>
                 <div class="card-body">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

@@ -35,13 +35,13 @@
         <div class="content mt-3">
             <div class="login-form">
                     <div style="margin-bottom:20px">
-                       <a  href="actividadesMenu.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Actividades</button></a></br>
+                       <a  href="actividadesMenu.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-dribbble" style="margin-right:20px"></i>Actividades</button></a></br>
                     </div>
                     <div style="margin-bottom:20px">
-                        <a  href="productos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Productos</button></a></br>
+                        <a  href="productos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-briefcase" style="margin-right:20px"></i>Productos</button></a></br>
                     </div>
                     <div style="margin-bottom:20px">
-                        <a  href="pagos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Pagos Pendientes</button></a></br>
+                        <a  href="pagos.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-credit-card" style="margin-right:20px"></i>Pagos Pendientes</button></a></br>
                     </div>
                 </div>
             

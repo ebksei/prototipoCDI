@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Carrito de Compra</h1>
+                    <h1><i class="fa fa-shopping-cart" style="margin-right:20px"></i>Carrito de Compra</h1>
                 </div>
             </div>
         </div>
@@ -46,17 +46,7 @@
                             <tr>
                               <td>Sasha la patata</td>
                               <td>8€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
-                          </tr>
-                          <tr>
-                              <td>Barritas titán</td>
-                              <td>5€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
-                          </tr>
-                          <tr>
-                              <td>Cinturón de soldado</td>
-                              <td>3€</td>
-                              <td class="text-center"><button class="btn btn-danger"><i class="fa fa-trash-o"></i></button></td>
+                              <td class="text-center"><button class="btn btn-danger" style="font-size:1.5em;margin:5px"><i class="fa fa-trash-o"></i></button></td>
                           </tr>
                           <tr>
                               <td style="font-weight:bolder">Total:</td>

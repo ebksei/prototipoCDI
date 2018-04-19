@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Productos</h1>
+                    <h1><i class="fa fa-briefcase" style="margin-right:20px"></i>Productos</h1>
                 </div>
             </div>
         </div>
@@ -38,11 +38,19 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
+                              <div class="text-align-right">
+                                    <a href="carrito.php">
+                                            <button class="btn btn-success" style="min-width:50px;min-height:50px;margin:10px       ">
+                                                    <i class="fa fa-shopping-cart" style="margin-right:15px"></i>Ver carrito
+                                            </button>
+                                    </a>
+                              </div>
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
-                                        <th>
-                                            <td>Descripción</td>
-                                        </th>
+                                        <tr>
+                                            <th>Producto</th>
+                                            <th>Descripción</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
@@ -52,35 +60,9 @@
                                         <td>
                                             <h4>Insignia del gimnasio</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
+                                            <div class="botones text-right" style="font-size:2em">
                                                 8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
-                                        </td>
-                                        <td>
-                                            <h4>Barritas titán</h4>
-                                            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
-                                                8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
-                                        </td>
-                                        <td>
-                                            <h4>Shasha la patata</h4>
-                                            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right">
-                                                8€
-                                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></button>
+                                                <button type="button" class="btn btn-success" style="font-size:1em;margin:0px 20px 10px 30px"><i class="fa fa-shopping-cart"></i></button>
                                             </div>
                                         </td>
                                       </tr>

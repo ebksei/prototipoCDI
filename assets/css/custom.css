@@ -10,7 +10,7 @@
 }
 
 .bg-externo{
-	background-image:url('../../images/indexBG.jpg');
+	/*background-image:url('../../images/indexBG.jpg');*/
 	background-repeat:no-repeat;
 	background-position:center;
 	width:100%;
@@ -24,6 +24,24 @@
 	border: 1px black solid;
 	margin:auto;
 }
+.icono-header{
+	font-size:2em;
+	margin:5px;
+}
+.navbar .navbar-nav li{
+	border-bottom: 1px solid #fff;
+}
+.navbar .navbar-nav li > a{
+	font-size:1.2em;
+	margin:10px;
+}
+.login-form .btn{
+	font-size:1.4em;
+}
+.page-header .page-title h1{
+	font-size:1.7em;
+}
+
 @media only screen and (max-device-width: 480px){	
 
 	.dataTables_length, .dataTables_filter{

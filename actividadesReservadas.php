@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Actividades disponibles</h1>
+                    <h1><i class="fa fa-dribbble" style="margin-right:10px"></i>Actividades disponibles</h1>
                 </div>
             </div>
         </div>
@@ -52,17 +52,7 @@
                                           </td>
                                           <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-danger"><i class="fa fa-times-circle"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
-                                          </td>
-                                          <td>
-                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-danger"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                       </tr>
