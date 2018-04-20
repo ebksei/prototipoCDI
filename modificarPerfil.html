@@ -48,8 +48,10 @@
           return "";
       }
       function guardarDatos(){
-        var nombre = document.getElementById("nombre").value;
+          var nombre = document.getElementById("nombre").value;
           setCookie("nombre",nombre,30);
+          var apellido = document.getElementById("apellido").value;
+          setCookie("apellido",apellido,30);
           var mail = document.getElementById("email").value;
           setCookie("email",mail,30);
           var clave = document.getElementById("clave").value;
@@ -60,8 +62,25 @@
           setCookie("tel",telefono,30);
           var cBan = document.getElementById("banco").value;
           setCookie("banco",cBan,30);
-          alert ("nombre =" +nombre+"\n correo = "+mail+"\n clave = "+clave+"\n direccion = "+direccion+"\n telefono = "+telefono+"\n cbanc = "+cBan);
-
+          //alert ("nombre =" +nombre+"\n correo = "+mail+"\n clave = "+clave+"\n direccion = "+direccion+"\n telefono = "+telefono+"\n cbanc = "+cBan);
+          if(document.getElementById("ta1").checked){
+            var ta=1;
+          }else if(document.getElementById("ta2").checked){
+            ta=2;
+          }else if(document.getElementById("ta3").checked){
+            ta = 3;
+          }else if(document.getElementById("ta1").checked){
+            ta = 4;
+          }
+          setCookie("ta",ta,30);
+          if(document.getElementById("ho1").checked){
+            var ho=1;
+          }else if(document.getElementById("ho2").checked){
+            ho=2;
+          }else if(document.getElementById("ho3").checked){
+            ho = 3;
+          }
+          setCookie("ho",ho,30);
       }
       function obtenerdatos(){
         var nombre = getCookie("nombre");
@@ -97,7 +116,6 @@
           document.getElementById("banco").value = cBan;
         }
         var ta = getCookie("ta");
-        alert (ta);
         if(ta==1){
           document.getElementById("ta1").checked =true;
         } else if(ta==2){
@@ -120,13 +138,10 @@
         }
 
       }
-      function checkCookie() {
-        var user = getCookie("nombre");
-        if (user != "") {
-            alert("Welcome again " + user);
-        } else {
-              alert("No se ha guardado");
-        }
+      function comprobar(){
+        var pas1 = document.getElementById("clave").value;
+        var pas2 = document.getElementById("repPas").value;
+        if (pas1!=pas2)alert("Las contraseñas no coinciden");
       }
   </script>
 </head>
@@ -157,6 +172,10 @@
                   <div class="form-group">
                       <label>Password</label>
                       <input type="password" class="form-control" placeholder="Contraseña" id="clave">
+                  </div>
+                  <div class="form-group">
+                      <label>Repeat</label>
+                      <input type="password" class="form-control" placeholder="Password" id="repPas" onchange="comprobar()">
                   </div>
                   <div class="form-group">
                       <label>Direccion</label>
