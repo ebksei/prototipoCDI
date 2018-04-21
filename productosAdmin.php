@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js" lang=""> 
+<html class="no-js" lang="">
 <head>
-    
-    <?php echo file_get_contents('rsc/head.html'); ?> 
+
+    <?php echo file_get_contents('rsc/head.html'); ?>
 
     <title>SNK - Título</title>
 
@@ -11,7 +11,7 @@
 
         <!-- Left Panel -->
 
-    <?php echo file_get_contents('rsc/aside.html'); ?> 
+    <?php echo file_get_contents('rsc/asideAdmin.html'); ?> 
     <!-- /#left-panel -->
 
     <!-- Left Panel -->
@@ -21,8 +21,8 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-       
-      <?php echo file_get_contents('rsc/header.html'); ?> 
+
+      <?php echo file_get_contents('rsc/header.html'); ?>
 
         <div class="breadcrumbs">
             <div class="page-header float-left">
@@ -65,18 +65,18 @@
                             </div>
                         </div>
                     </div>
-            
+
 
         </div> <!-- .content -->
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
 
-    
-    <?php echo file_get_contents('rsc/scripts.html'); ?> 
+
+    <?php echo file_get_contents('rsc/scripts.html'); ?>
     <script type="text/javascript">
         jQuery(document).ready(function() {
-          jQuery('#bootstrap-data-table').DataTable();          
+          jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
         } );
     </script>
