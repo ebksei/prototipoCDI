@@ -21,10 +21,11 @@
           return "";
         }
         function ocultar(){
+          document.getElementById('b2').style.visibility = 'hidden';
+          document.getElementById('b3').style.visibility = 'hidden';
           var nueva = getCookie("nueva");
           var x = document.getElementById("extra");
           if (nueva==1){
-            document.getElementById('b1').style.visibility = 'hidden';
             document.getElementById('b2').style.visibility = 'visible';
             document.getElementById('b3').style.visibility = 'visible';
             var nombre = getCookie("nuevaNombre");
@@ -64,6 +65,14 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
+                              <div class="card-body">
+                                <div class="text-right">
+                                      <a href="carrito.php">
+                                              <a href="tarifaExtra.php"><button class="btn btn-success" style="min-width:50px;min-height:50px;margin:10px       ">
+                                                      <i class="fa fa-plus" style="margin-right:15px"></i>Añadir
+                                              </button></a>
+                                      </a>
+                                </div>
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
@@ -118,11 +127,10 @@
                                       </tr>
                                       <tr>
                                         <td>
-                                            <p id="nuevaNombre" style="text-align:justify">Añadir Tarifa</p>
+                                            <p id="nuevaNombre" style="text-align:justify">Tarifas Mostradas</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <a href="tarifaExtra.php"><button id="b1" type="button" class="btn btn-success" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-plus-square-o"></i></button><a>
                                                   <a href="tarifaExtra.php"><button id="b2" type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
                                                   <button id="b3" type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>

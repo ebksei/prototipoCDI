@@ -85,29 +85,37 @@
         </div>
 
         <div class="content mt-3">
-          <div class ="login-form">
-            <div class ="form-group">
-              <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaKawai.jpg" alt="">
-            </div>
-            <div class="form-group">
-                <label>Nombre</label>
-                <input id="nombre" class="form-control" placeholder="Nombre Tarifa" value="Micasa" >
-            </div>
-            <div class="form-group">
-                <label>Descripcion</label>
-                <textarea rows="5" id="descripcion" class="form-control" >La tarifa para los soldados de élite de nuestras tropas
-                </textarea>
-            </div>
-            <div class="form-group">
-                <label>Precio General</label>
-                <input id="precio" class="form-control" placeholder="35€ "  >
-            </div>
-            <div class="form-group">
-                <label>Suplemento Horario</label>
-                <input id="suplemento" class="form-control" placeholder="10€ "  >
-            </div>
-          </div>
-          <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                      <div class ="form-group">
+                        <div class ="form-group">
+                          <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaTraining.jpg" alt="">
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input id="nombre" class="form-control" placeholder="Nombre Tarifa" value="Micasa" >
+                        </div>
+                        <div class="form-group">
+                            <label>Descripcion</label>
+                            <textarea rows="5" id="descripcion" class="form-control" >La tarifa para los soldados de élite de nuestras tropas
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Precio General</label>
+                            <input id="precio" class="form-control" placeholder="35€ "  >
+                        </div>
+                        <div class="form-group">
+                            <label>Suplemento Horario</label>
+                            <input id="suplemento" class="form-control" placeholder="10€ "  >
+                        </div>
+                      </div>
+                      <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
         </div> <!-- .content -->
     </div><!-- /#right-panel -->

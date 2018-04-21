@@ -85,31 +85,39 @@
         </div>
 
         <div class="content mt-3">
-          <div class ="login-form">
-            <div class ="form-group">
-              <img class="rounded-circle img-fluid d-block mx-auto" src="images/Levi1.jpeg" alt="">
-            </div>
-            <div class="form-group">
-                <label>Nombre</label>
-                <input id="nombre" class="form-control" placeholder="Nombre Tarifa" value="Levi" >
-            </div>
-            <div class="form-group">
-                <label>Descripcion</label>
-                <textarea rows="5" id="descripcion" class="form-control" >Si quieres estar tan en forma como un capitán, esta es tu tarifa.
-                </textarea>
-            </div>
-            <div class="form-group">
-                <label>Precio General</label>
-                <input id="precio" class="form-control" placeholder="40€ "  >
-            </div>
-            <div class="form-group">
-                <label>Suplemento Horario</label>
-                <input id="suplemento" class="form-control" placeholder="15€ "  >
-            </div>
-          </div>
-          <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
+          <div class="row">
 
-        </div> <!-- .content -->
+              <div class="col-md-12">
+                <div class="card">
+                      <div class="card-body">
+
+                            <div class ="form-group">
+                              <img class="rounded-circle img-fluid d-block mx-auto" src="images/LeviTraining.jpg" alt="">
+                            </div>
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input id="nombre" class="form-control" placeholder="Nombre Tarifa" value="Levi" >
+                            </div>
+                            <div class="form-group">
+                                <label>Descripcion</label>
+                                <textarea rows="5" id="descripcion" class="form-control" >Si quieres estar tan en forma como un capitán, esta es tu tarifa.
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Precio General</label>
+                                <input id="precio" class="form-control" placeholder="40€ "  >
+                            </div>
+                            <div class="form-group">
+                                <label>Suplemento Horario</label>
+                                <input id="suplemento" class="form-control" placeholder="15€ "  >
+                            </div>
+                          </div>
+                          <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
+                        </div>
+
+                    </div>
+                  </div>
+      </div> <!-- .content -->
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
