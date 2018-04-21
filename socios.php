@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Socios</h1>
+                    <h1><i class="fa fa-users" style="margin-right:20px"></i>Socios</h1>
                 </div>
             </div>
         </div>
@@ -53,13 +53,13 @@
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-info"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn btn-info pago"><i class="fa fa-eur" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
 
-                                                <button type="button" class="btn btn-success"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn btn-success reactivar"><i class="fa fa-thumbs-up" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -69,13 +69,13 @@
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-info"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn" id="pago"><i class="fa fa-eur pagosDone" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
 
-                                                <button type="button" class="btn btn-success"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn"><i class="fa fa-thumbs-up reactivado" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -97,6 +97,25 @@
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
         } );
+        jQuery('.reactivar').click(function(){
+            alert("Usuario reactivado");
+            jQuery(this).removeClass('reactivar');
+            jQuery(this).addClass('reactivado');
+            jQuery(this).removeClass('btn-success');
+        })
+        jQuery('.reactivado').click(function(){
+            alert("El usuario no está desactivado.");
+        })
+
+        jQuery('.pago').click(function(){
+            alert("Pagos confirmados");
+            jQuery(this).removeClass('pago');
+            jQuery(this).addClass('pagosDone');
+            jQuery(this).removeClass('btn-info');
+        })
+        jQuery('.pagosDone').click(function(){
+            alert("El usuario tiene todos los pagos al día");
+        })
     </script>
 
 </body>
