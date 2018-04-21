@@ -21,15 +21,15 @@
           return "";
         }
         function ocultar(){
-          document.getElementById('b2').style.visibility = 'hidden';
-          document.getElementById('b3').style.visibility = 'hidden';
+          document.getElementById("trE").style.display="none";
+          /*document.getElementById('b2').style.visibility = 'hidden';
+          document.getElementById('b3').style.visibility = 'hidden';*/
           var nueva = getCookie("nueva");
           var x = document.getElementById("extra");
           if (nueva==1){
-            document.getElementById('b2').style.visibility = 'visible';
-            document.getElementById('b3').style.visibility = 'visible';
+            document.getElementById('trE').style.display="block";
             var nombre = getCookie("nuevaNombre");
-            document.getElementById("nuevaNombre").innerHTML =nombre;
+            document.getElementById("nuevaNombre").innerHTML ="Tarifa "+nombre;
           }
         }
     </script>
@@ -81,7 +81,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                      <tr id= titan>
+                                      <tr>
                                         <td>
                                             <p style="text-align:justify">Tarifa Titán</p>
                                         </td>
@@ -125,14 +125,14 @@
                                             </div>
                                         </td>
                                       </tr>
-                                      <tr>
+                                      <tr id=trE>
                                         <td>
                                             <p id="nuevaNombre" style="text-align:justify">Tarifas Mostradas</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                  <a href="tarifaExtra.php"><button id="b2" type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                  <button id="b3" type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                  <a href="tarifaExtra.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
+                                                  <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
