@@ -34,10 +34,12 @@
         }
       }
       function ocultar(){
+
         document.getElementById("trE").style.display="none";
         /*document.getElementById('b2').style.visibility = 'hidden';
         document.getElementById('b3').style.visibility = 'hidden';*/
         var nueva = getCookie("prod");
+        alert(nueva);
         var x = document.getElementById("extra");
         if (nueva==1){
           document.getElementById('trE').style.display="block";
@@ -117,8 +119,8 @@
                                             <div class="productoImg " style="background-image:url('')">Imagen</div>
                                         </td>
                                         <td>
-                                            <h4 id="nombreExtra">Insignia del gimnasio</h4>
-                                            <p id="descripcionExtra" style="text-align:justify">Obtén la Insignia del gimnasio SNK para lucirla delante de tus amigos</p>
+                                            <h4 id="nombreExtra"></h4>
+                                            <p id="descripcionExtra" style="text-align:justify"></p>
                                             <div class="botones text-right" style="font-size:2em">
                                                 <p id="precioExtra"></p>
                                                 <a href="producto1.php"><button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button></a>

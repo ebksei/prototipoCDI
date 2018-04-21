@@ -39,23 +39,20 @@
           setCookie("prod", nueva,30);
       }
       function obtenerdatos(){
-        var nombre = getCookie("nuevaNombre");
+        var nombre = getCookie("proExNombre");
         if(nombre!=""){
           document.getElementById("nombre").value = nombre;
         }
-        var descripcion = getCookie("nuevaDescripcion");
+        var descripcion = getCookie("proExDescripcion");
         if(descripcion!=""){
           document.getElementById("descripcion").value = descripcion;
         }
 
-        var precio = getCookie("nuevaPrecio");
+        var precio = getCookie("proExPrecio");
         if(precio!=""){
           document.getElementById("precio").value = precio;
         }
-        var suplemento = getCookie("nuevaSuplemento");
-        if(suplemento!=""){
-          document.getElementById("suplemento").value = suplemento;
-        }
+      
 
       }
 
