@@ -34,7 +34,7 @@
         else{ alert ="contraseña incorrecta"; }
       }
       else{
-        window.location = "http://localhost/prototipoCDI/menuAdmin.php";
+        window.location = "http://localhost/prototipoCDI/menuUsuario.php";
 
       }
     }
