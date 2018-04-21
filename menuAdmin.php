@@ -10,7 +10,7 @@
 <body>
 
         <!-- Left Panel -->
-    <?php echo file_get_contents('rsc/asideAdmin.html'); ?> 
+    <?php echo file_get_contents('rsc/asideAdmin.html'); ?>
     <!-- /#left-panel -->
 
     <!-- Left Panel -->
@@ -20,8 +20,8 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-       
-      <?php echo file_get_contents('rsc/headerAdmin.html'); ?> 
+
+      <?php echo file_get_contents('rsc/headerAdmin.html'); ?>
 
         <div class="breadcrumbs">
             <div class="page-header float-left">
@@ -58,8 +58,8 @@
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
-    
-    <?php echo file_get_contents('rsc/scripts.html'); ?> 
+
+    <?php echo file_get_contents('rsc/scripts.html'); ?>
 
 </body>
 </html>
