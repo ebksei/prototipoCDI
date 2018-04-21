@@ -29,26 +29,32 @@
       }
       function guardarDatos(){
           var nombre = document.getElementById("nombre").value;
-          setCookie("InsNombre",nombre,30);
+          setCookie("proExNombre",nombre,30);
           var descripcion = document.getElementById("descripcion").value;
-          setCookie("insDescripcion",descripcion,30);
+          setCookie("proExDescripcion",descripcion,30);
           var precio = document.getElementById("precio").value;
-          setCookie("InsPrecio",precio,30);
-
+          setCookie("proExPrecio",precio,30);
+          var suplemento = document.getElementById("suplemento").value;
+          var nueva = 1;
+          setCookie("prod", nueva,30);
       }
       function obtenerdatos(){
-        var nombre = getCookie("InsNombre");
+        var nombre = getCookie("nuevaNombre");
         if(nombre!=""){
           document.getElementById("nombre").value = nombre;
         }
-        var descripcion = getCookie("InsDescripcion");
+        var descripcion = getCookie("nuevaDescripcion");
         if(descripcion!=""){
           document.getElementById("descripcion").value = descripcion;
         }
 
-        var precio = getCookie("InsPrecio");
+        var precio = getCookie("nuevaPrecio");
         if(precio!=""){
           document.getElementById("precio").value = precio;
+        }
+        var suplemento = getCookie("nuevaSuplemento");
+        if(suplemento!=""){
+          document.getElementById("suplemento").value = suplemento;
         }
 
       }
@@ -74,37 +80,35 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Insignia del gimnasio</h1>
+                    <h1>Nuevo Producto</h1>
                 </div>
             </div>
         </div>
 
         <div class="content mt-3">
           <div class="row">
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-body">
-                        <div class="form-group">
-                            <label>Nombre</label>
-                            <input id="nombre" class="form-control" placeholder="Nombre Producto" value="Insignia del Gimnasio" >
-                        </div>
-                        <div class="form-group">
-                            <label>Descripcion</label>
-                            <textarea rows="5" id="descripcion" class="form-control" >Obtén la Insignia del gimnasio SNK para lucirla delante de tus amigos
-                            </textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Precio </label>
-                            <input id="precio" class="form-control" placeholder="8€ "  >
-                        </div>
-
-                      </div>
-                      <a href="productosAdmin.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
-                    </div>
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-group">
+                      <label>Nombre</label>
+                      <input id="nombre" class="form-control" placeholder="Nombre Producto" >
                   </div>
-                </div>
-              </div>
+                  <div class="form-group">
+                      <label>Descripcion</label>
+                      <textarea rows="5" id="descripcion" class="form-control" placeholder="Descripcion">
+                      </textarea>
+                  </div>
+                  <div class="form-group">
+                      <label>Precio General</label>
+                      <input id="precio" class="form-control" placeholder="Precio"  >
+                  </div>
 
+                </div>
+                <a href="productosAdmin.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Crear Producto</button></a>
+              </div>
+            </div>
+          </div>
         </div> <!-- .content -->
     </div><!-- /#right-panel -->
 

@@ -86,11 +86,9 @@
 
         <div class="content mt-3">
           <div class="row">
-
               <div class="col-md-12">
                 <div class="card">
                       <div class="card-body">
-
                             <div class ="form-group">
                               <img class="rounded-circle img-fluid d-block mx-auto" src="images/LeviTraining.jpg" alt="">
                             </div>
