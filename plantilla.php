@@ -34,6 +34,7 @@
 
         <div class="content mt-3">
 
+            <!-- AQUÍ VA EL CONTENIDO -->
             
 
         </div> <!-- .content -->
