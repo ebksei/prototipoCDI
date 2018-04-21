@@ -232,8 +232,8 @@
                     <div class="form-group">
                       <br><br>
                     </div>
-                    <div class="form-group">
-                      <h2>Selecciona Horario</h2>
+                    <div class="form-group text-center">
+                      <h2>Horario</h2>
                       <div class="col-lg-4 col-sm-4 text-center mb-4">
                           <div class="radio">
                             <label for="radio1" class="form-check-label ">
@@ -257,8 +257,8 @@
                       </div>
                     </div>
 
-                          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button>
-                          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Cancelar Cambios</button>
+                          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar</button>
+                          <button type="submit" class="btn btn-danger btn-flat m-b-30 m-t-30">Cancelar</button>
 
                           <div class="register-link m-t-15 text-center">
                               <p>¿Ya eres miembro de SNK? <a href="login.html">Iniciar Sesión</a></p>
