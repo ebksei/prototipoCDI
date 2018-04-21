@@ -26,7 +26,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Menú</h1>
+                    <h1>Menú de Administración</h1>
                 </div>
             </div>
         </div>

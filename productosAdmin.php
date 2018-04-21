@@ -38,13 +38,6 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">
-                              <div class="text-right">
-                                    <a href="carrito.php">
-                                            <button class="btn btn-success" style="min-width:50px;min-height:50px;margin:10px       ">
-                                                    <i class="fa fa-shopping-cart" style="margin-right:15px"></i>Ver carrito
-                                            </button>
-                                    </a>
-                              </div>
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
@@ -62,7 +55,8 @@
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-right" style="font-size:2em">
                                                 8€
-                                                <button type="button" class="btn btn-success" style="font-size:1em;margin:0px 20px 10px 30px"><i class="fa fa-shopping-cart"></i></button>
+                                                <button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-danger" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>

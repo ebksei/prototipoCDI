@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Socios</h1>
+                    <h1>Tarifas</h1>
                 </div>
             </div>
         </div>
@@ -41,44 +41,22 @@
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Socio</th>
-                                            <th>Confirmar pago</th>
-                                            <th>Reactivar</th>
+                                            <th>Tarifas</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Marco</p>
+                                            <p style="text-align:justify">Tarifa Titán</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-info"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-
-                                                <button type="button" class="btn btn-success"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button>
+                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                     </tr>
-                                      <tr>
-                                        <td>
-                                            <p style="text-align:justify">Arnold Schwarzenegger</p>
-                                        </td>
-                                        <td>
-                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-info"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-
-                                                <button type="button" class="btn btn-success"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
                                   </tbody>
                                 </table>
                             </div>
