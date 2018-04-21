@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Socios</h1>
+                    <h1><i class="fa fa-users" style="margin-right:20px"></i>Socios</h1>
                 </div>
             </div>
         </div>
