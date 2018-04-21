@@ -23,12 +23,12 @@
         function ocultar(){
           var nueva = getCookie("nueva");
           var x = document.getElementById("extra");
-          if (nueva!=1){
-            x.style.display = "block";
-          } else {
-              var nombre = getCookie("nuevaNombre");
-              document.getElementById(nuevaNombre).value =nombre;
-              x.style.display = "none";
+          if (nueva==1){
+            document.getElementById('b1').style.visibility = 'hidden';
+            document.getElementById('b2').style.visibility = 'visible';
+            document.getElementById('b3').style.visibility = 'visible';
+            var nombre = getCookie("nuevaNombre");
+            document.getElementById("nuevaNombre").innerHTML =nombre;
           }
         }
     </script>
@@ -118,25 +118,17 @@
                                       </tr>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Añadir Tarifa</p>
+                                            <p id="nuevaNombre" style="text-align:justify">Añadir Tarifa</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <a href="tarifaExtra.php"><button  type="button" class="btn btn-success" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-plus-square-o"></i></button><a>
+                                                <a href="tarifaExtra.php"><button id="b1" type="button" class="btn btn-success" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-plus-square-o"></i></button><a>
+                                                  <a href="tarifaExtra.php"><button id="b2" type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
+                                                  <button id="b3" type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
-                                      <tr id="extra" stile="display:none">
-                                        <td>
-                                            <p id=nuevaNombre style="text-align:justify"></p>
-                                        </td>
-                                        <td>
-                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <a href="tarifaMicasa.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
+
                                   </tbody>
                                 </table>
                             </div>
