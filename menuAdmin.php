@@ -1,16 +1,15 @@
 <!doctype html>
-<html class="no-js" lang=""> 
+<html class="no-js" lang="">
 <head>
-    
-    <?php echo file_get_contents('rsc/head.html'); ?> 
 
-    <title>SNK Gimnasios</title>
+    <?php echo file_get_contents('rsc/head.html'); ?>
+
+    <title>Gimnasios SNK</title>
 
 </head>
 <body>
 
         <!-- Left Panel -->
-
     <?php echo file_get_contents('rsc/asideAdmin.html'); ?> 
     <!-- /#left-panel -->
 
@@ -27,7 +26,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Título</h1>
+                    <h1>Menú</h1>
                 </div>
             </div>
         </div>
@@ -59,7 +58,6 @@
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
-
     
     <?php echo file_get_contents('rsc/scripts.html'); ?> 
 

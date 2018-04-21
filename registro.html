@@ -96,6 +96,11 @@
             alert("No se ha guardado");
         }
       }
+      function comprobar(){
+        var pas1 = document.getElementById("clave").value;
+        var pas2 = document.getElementById("repPas").value;
+        if (pas1!=pas2)alert("Las contraseñas no coinciden");
+      }
     </script>
 </head>
 <body class="bg-dark">
@@ -125,6 +130,10 @@
                         <div class="form-group">
                             <label>Password</label>
                             <input type="password" class="form-control" placeholder="Password" id="clave">
+                        </div>
+                        <div class="form-group">
+                            <label>Repeat</label>
+                            <input type="password" class="form-control" placeholder="Password" id="repPas" onchange="comprobar()">
                         </div>
                         <div class="form-group">
                             <label>Direccion</label>
@@ -282,8 +291,7 @@
                                 <input type="checkbox"> Acepto politica de privacidad
                             </label>
                         </div>
-                        <a href="modificarPerfil.html"><button onclick="guardarDatos()" class="btn btn-primary btn-flat m-b-30 m-t-30" >Registrarse</button></a>
-                        <button onclick="guardarDatos()" class="btn btn-primary btn-flat m-b-30 m-t-30" >comprobar</button>
+                        <a href="menuUsuario.php"><button onclick="guardarDatos()" class="btn btn-primary btn-flat m-b-30 m-t-30" >Registrarse</button></a>
 
                         <div class="register-link m-t-15 text-center">
                             <p>¿Ya eres miembro de SNK? <a href="login.html">Iniciar Sesión</a></p>
