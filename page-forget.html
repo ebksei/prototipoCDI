@@ -45,7 +45,7 @@
                             <label>Correo</label>
                             <input type="email" class="form-control" placeholder="Email">
                         </div>
-                        <button type="submit" class="btn btn-success btn-flat m-b-15">Enviar</button>
+                        <button type="button" class="btn btn-success btn-flat m-b-15" onclick="mensajeEnviado()">Enviar</button>
 
                     </form>
                 </div>
@@ -58,6 +58,13 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function mensajeEnviado(){
+            alert('Mensaje enviado. Comprueba tu correo.');
+           window.location.replace("login.php");
+
+        }
+    </script>
 
 
 </body>

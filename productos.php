@@ -62,7 +62,7 @@
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-right" style="font-size:2em">
                                                 8€
-                                                <button type="button" class="btn btn-success" style="font-size:1em;margin:0px 20px 10px 30px"><i class="fa fa-shopping-cart"></i></button>
+                                                <button type="button" class="btn btn-success" style="font-size:1em;margin:0px 20px 10px 30px" onclick="comprarInsignia()"><i class="fa fa-shopping-cart"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -81,6 +81,17 @@
     
     <?php echo file_get_contents('rsc/scripts.html'); ?> 
     <script type="text/javascript">
+        function setCookie(cname,cvalue,exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+          }
+          function comprarInsignia(){
+            setCookie('insignia',true,1);
+            alert('Artículo añadido');
+          }
+
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();          
           jQuery('#bootstrap-data-table_length').parent().hide();

@@ -101,9 +101,7 @@
           jQuery('#bootstrap-data-table_length').parent().hide();
           jQuery('#bootstrap-data-table_info').hide();
         } );
-    </script>
-
-    <script type="text/javascript">
+        
     function getCookie(cname) {
         var name = cname + "=";
         var ca = document.cookie.split(';');
