@@ -49,7 +49,7 @@
                                             <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Matar titanes</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-success" style="padding:20px"><i class="fa fa-calendar-o"></i> Inscribirse</button>
+                                                <button type="button" class="btn btn-success" style="padding:20px" onclick="reservarActividad('matarTitanes')"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>
@@ -58,7 +58,7 @@
                                             <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-success" style="padding:20px"><i class="fa fa-calendar-o"></i> Inscribirse</button>
+                                                <button type="button" class="btn btn-success" style="padding:20px" onclick="reservarActividad('entrenamiento')"><i class="fa fa-calendar-o"></i> Inscribirse</button>
                                             </div>
                                         </td>
                                       </tr>
@@ -77,6 +77,34 @@
     
     <?php echo file_get_contents('rsc/scripts.html'); ?> 
     <script type="text/javascript">
+        function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+
+        function reservarActividad(actividad){
+            setCookie(actividad,true,1);
+            alert("Gracias por inscribirse en la actividad.");
+        }
+
+
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();

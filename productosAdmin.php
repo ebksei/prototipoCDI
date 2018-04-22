@@ -5,53 +5,6 @@
     <?php echo file_get_contents('rsc/head.html'); ?>
 
     <title>SNK - Título</title>
-    <script>
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-      function obtenerdatos(){
-        var nombre = getCookie("InsNombre");
-        if(nombre!=""){
-          alert(nombre);
-          document.getElementById("InsNombre").innerHTML = nombre;
-        }
-
-        var descripcion = getCookie("InsDescripcion");
-        if(descripcion!=""){
-          alert(descripcion);
-          document.getElementById("insDescripcion").innerHTML = descripcion;
-        }
-      }
-      function ocultar(){
-
-        document.getElementById("trE").style.display="none";
-        /*document.getElementById('b2').style.visibility = 'hidden';
-        document.getElementById('b3').style.visibility = 'hidden';*/
-        var nueva = getCookie("prod");
-        alert(nueva);
-        var x = document.getElementById("extra");
-        if (nueva==1){
-          document.getElementById('trE').style.display="block";
-          var nombre = getCookie("proExNombre");
-          document.getElementById("nombreExtra").innerHTML =nombre;
-          var desc = getCookie("proExDescripcion");
-          document.getElementById("DescripcionExtra").innerHTML =desc;
-          var precio = getCookie("proExPrecio");
-          document.getElementById("PrecioExtra").innerHTML =precio;
-        }
-      }
-    </script>
 
 </head>
 <body onload="ocultar()">
@@ -69,7 +22,7 @@
 
         <!-- Header-->
 
-      <?php echo file_get_contents('rsc/header.html'); ?>
+      <?php echo file_get_contents('rsc/headerAdmin.html'); ?>
 
         <div class="breadcrumbs">
             <div class="page-header float-left">
@@ -102,7 +55,7 @@
                                     <tbody>
                                       <tr>
                                         <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
+                                            <div class="productoImg " style="background-image:url('images/insignia.jpg');background-size:contain;background-position:center;background-repeat:no-repeat"></div>
                                         </td>
                                         <td>
                                             <h4 id=insNombre>Insignia del gimnasio</h4>
@@ -110,7 +63,7 @@
                                             <div class="botones text-right" style="font-size:2em">
                                                 8€
                                                 <a href="producto1.php"><button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button></a>
-                                                <button type="button" class="btn btn-danger" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -124,7 +77,7 @@
                                             <div class="botones text-right" style="font-size:2em">
                                                 <p id="precioExtra"></p>
                                                 <a href="producto1.php"><button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button></a>
-                                                <button type="button" class="btn btn-danger" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -146,7 +99,60 @@
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
+          jQuery('#bootstrap-data-table_info').hide();
         } );
+    </script>
+
+    <script type="text/javascript">
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+      function obtenerdatos(){
+        var nombre = getCookie("InsNombre");
+        if(nombre!=""){
+          document.getElementById("InsNombre").innerHTML = nombre;
+        }
+
+        var descripcion = getCookie("InsDescripcion");
+        if(descripcion!=""){
+          document.getElementById("insDescripcion").innerHTML = descripcion;
+        }
+      }
+      function ocultar(){
+
+        document.getElementById("trE").style.display="none";
+        /*document.getElementById('b2').style.visibility = 'hidden';
+        document.getElementById('b3').style.visibility = 'hidden';*/
+        var nueva = getCookie("prod");
+        var x = document.getElementById("extra");
+        if (nueva==1){
+          document.getElementById('trE').style.display="block";
+          var nombre = getCookie("proExNombre");
+          document.getElementById("nombreExtra").innerHTML =nombre;
+          var desc = getCookie("proExDescripcion");
+          document.getElementById("DescripcionExtra").innerHTML =desc;
+          var precio = getCookie("proExPrecio");
+          document.getElementById("PrecioExtra").innerHTML =precio;
+        }
+      }
+
+      $(document).ready(function(){
+        $('.borrar').click(function(){
+            $(this).parent().parent().parent().remove();
+
+        });
+      });
     </script>
 
 

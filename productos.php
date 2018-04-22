@@ -55,7 +55,7 @@
                                     <tbody>
                                       <tr>
                                         <td>
-                                            <div class="productoImg " style="background-image:url('')">Imagen</div>
+                                            <div class="productoImg " style="background-image:url('images/insignia.jpg');background-size:contain;background-position:center;background-repeat:no-repeat"></div>
                                         </td>
                                         <td>
                                             <h4>Insignia del gimnasio</h4>

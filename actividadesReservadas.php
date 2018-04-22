@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1><i class="fa fa-dribbble" style="margin-right:10px"></i>Actividades disponibles</h1>
+                    <h1><i class="fa fa-dribbble" style="margin-right:10px"></i>Actividades Reservadas</h1>
                 </div>
             </div>
         </div>
@@ -46,13 +46,23 @@
                                     </td>
                                 </thead>
                                     <tbody>
-                                      <tr>
+                                      <tr id="matarTitanes" style="display:none">
                                         <td>
                                             <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Matar titanes</h4>
                                           </td>
                                           <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <button type="button" class="btn btn-danger"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                                <button type="button" class="btn btn-danger" class="desinscribirse" data-actividad="matarTitanes" onclick="desinscribirse('matarTitanes')" ><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
+                                            </div>
+                                        </td>
+                                      </tr>
+                                      <tr id="entrenamiento" style="display:none">
+                                        <td>
+                                            <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
+                                          </td>
+                                          <td>
+                                            <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
+                                                <button type="button" class="btn btn-danger" class="desinscribirse" onclick="desinscribirse('entrenamiento')"><i class="fa fa-times-circle" style="font-size:2em;margin:5px"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -72,9 +82,42 @@
     
     <?php echo file_get_contents('rsc/scripts.html'); ?> 
     <script type="text/javascript">
+        function setCookie(cname,cvalue,exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+          }
+
+      function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+      function desinscribirse(actividad){
+        $('#'+actividad).hide();
+        setCookie(actividad, false,1);
+      }
+
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
+          jQuery('#bootstrap-data-table_info').hide();
+          if(getCookie('entrenamiento') == 'true'){
+            $('#entrenamiento').show();
+          }
+          if(getCookie('matarTitanes') == 'true'){
+            $('#matarTitanes').show();
+          }
         } );
     </script>
 

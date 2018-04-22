@@ -5,34 +5,6 @@
     <?php echo file_get_contents('rsc/head.html'); ?>
 
     <title>SNK Gimnasios</title>
-    <script>
-      function getCookie(cname) {
-          var name = cname + "=";
-          var ca = document.cookie.split(';');
-          for(var i = 0; i < ca.length; i++) {
-              var c = ca[i];
-              while (c.charAt(0) == ' ') {
-                  c = c.substring(1);
-              }
-              if (c.indexOf(name) == 0) {
-                  return c.substring(name.length, c.length);
-              }
-          }
-          return "";
-        }
-        function ocultar(){
-          document.getElementById("trE").style.display="none";
-          /*document.getElementById('b2').style.visibility = 'hidden';
-          document.getElementById('b3').style.visibility = 'hidden';*/
-          var nueva = getCookie("nueva");
-          var x = document.getElementById("extra");
-          if (nueva==1){
-            document.getElementById('trE').style.display="block";
-            var nombre = getCookie("nuevaNombre");
-            document.getElementById("nuevaNombre").innerHTML ="Tarifa "+nombre;
-          }
-        }
-    </script>
 </head>
 <body onload="ocultar()">
 
@@ -88,7 +60,7 @@
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
                                                 <a href="tarifaTitan.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -99,7 +71,7 @@
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
                                                 <a href="tarifaMichoza.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -110,7 +82,7 @@
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
                                                 <a href="tarifaMicasa.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -121,7 +93,7 @@
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
                                                 <a href="tarifaLevi.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -132,7 +104,7 @@
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
                                                   <a href="tarifaExtra.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
-                                                  <button type="button" class="btn btn-danger" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                  <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -150,11 +122,47 @@
 
 
     <?php echo file_get_contents('rsc/scripts.html'); ?>
-    <script type="text/javascript">
+    <script>
+      function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+        }
+        function ocultar(){
+          document.getElementById("trE").style.display="none";
+          /*document.getElementById('b2').style.visibility = 'hidden';
+          document.getElementById('b3').style.visibility = 'hidden';*/
+          var nueva = getCookie("nueva");
+          var x = document.getElementById("extra");
+          if (nueva==1){
+            document.getElementById('trE').style.display="table-row";
+            var nombre = getCookie("nuevaNombre");
+            document.getElementById("nuevaNombre").innerHTML ="Tarifa "+nombre;
+          }
+        }
+        
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
+          jQuery('#bootstrap-data-table_info').hide();
         } );
+
+      $(document).ready(function(){
+        $('.borrar').click(function(){
+          alert(1);
+            $(this).parent().parent().parent().parent().remove();
+
+        });
+      });
     </script>
 
 </body>

@@ -27,7 +27,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Actividad</h1>
+                    <h1><i class="fa fa-dribbble" style="margin-right:10px"></i>Nueva Actividad</h1>
                 </div>
             </div>
         </div>

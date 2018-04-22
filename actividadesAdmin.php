@@ -39,7 +39,7 @@
                         <div class="card">
                             <div class="card-body">
                               <div class="text-right">
-                                    <a href="carrito.php">
+                                    <a href="actividadForm.php">
                                             <button class="btn btn-success" style="min-width:50px;min-height:50px;margin:10px       ">
                                                     <i class="fa fa-plus" style="margin-right:15px"></i>Añadir
                                             </button>
@@ -47,8 +47,9 @@
                               </div>
                               <table id="bootstrap-data-table" class="table table-striped table-bordered">
                                 <thead>
-                                    <th>
-                                    </th>
+                                    <tr>
+                                        <th>Actividades</th>
+                                    </tr>
                                 </thead>
                                     <tbody>
                                       <tr>
@@ -57,17 +58,7 @@
                                             <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             <div class="botones text-right" style="font-size:2em">
                                                 <button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-danger" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                            <h4 style="text-align:center;margin-bottom:10px;margin-top:10px">Entrenamiento</h4>
-                                            <p style="text-align:justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="botones text-right" style="font-size:2em">
-                                                <button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-danger" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
+                                                <button type="button" class="btn btn-danger borrar" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
                                       </tr>
@@ -89,7 +80,15 @@
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
+          jQuery('#bootstrap-data-table_info').hide();
         } );
+
+      $(document).ready(function(){
+        $('.borrar').click(function(){
+            $(this).parent().parent().parent().remove();
+
+        });
+      });
     </script>
 
 
