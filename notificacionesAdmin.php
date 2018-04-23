@@ -134,7 +134,7 @@
           var us = document.getElementById("destinatario").value;
           setCookie("destinatario", us, 30);
         }
-        alert(evento + fecha);
+        
         alert('Notificación enviada');
       }
 
