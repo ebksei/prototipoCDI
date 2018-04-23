@@ -53,7 +53,7 @@
                       <input id="suplemento" class="form-control" placeholder="Suplemento "  >
                   </div>
                   <div class="text-center">
-                    <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Crear Tarida</button></a>
+                    <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Guardar</button></a>
                   </div>
                 </div>
               </div>

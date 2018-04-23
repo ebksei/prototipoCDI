@@ -91,7 +91,7 @@
                   <div class="card-body">
                       <div class ="form-group">
                         <div class ="form-group">
-                          <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaTraining.jpg" alt="">
+                          <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaTraining.jpg"  style="height:300px;width:300px"   alt="">
                         </div>
                         <div class="form-group">
                             <label>Nombre</label>
