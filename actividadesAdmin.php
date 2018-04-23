@@ -107,7 +107,7 @@
             return "";
         }
         function ocultar(){
-
+          
           document.getElementById("trE").style.display="none";
           /*document.getElementById('b2').style.visibility = 'hidden';
           document.getElementById('b3').style.visibility = 'hidden';*/

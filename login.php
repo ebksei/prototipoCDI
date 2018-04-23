@@ -28,12 +28,13 @@
       var pass = document.getElementById("pass").value;
       if (us == usAdmin){
         if(pass == passAdmin){
-          alert ="contraseña incorrecta";
           window.location = "http://localhost/prototipoCDI/menuAdmin.php";
         }
         else{ alert ="contraseña incorrecta"; }
+        window.location = "http://localhost/prototipoCDI/menuAdmin.php";
       }
       else{
+
         window.location = "http://localhost/prototipoCDI/menuUsuario.php";
 
       }
@@ -58,11 +59,11 @@
                     <form>
                         <div class="form-group">
                             <label>Correo</label>
-                            <input id=mail type="email" class="form-control" placeholder="Email">
+                            <input id="mail" type="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label>Constraseña</label>
-                            <input id=pass type="password" class="form-control" placeholder="Password">
+                            <input id="pass" type="password" class="form-control" placeholder="Password">
                         </div>
                         <div class="checkbox">
                             <label>

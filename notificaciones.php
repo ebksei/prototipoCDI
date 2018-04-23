@@ -1,17 +1,38 @@
 <!doctype html>
-<html class="no-js" lang=""> 
+<html class="no-js" lang="">
 <head>
-    
-    <?php echo file_get_contents('rsc/head.html'); ?> 
+
+    <?php echo file_get_contents('rsc/head.html'); ?>
 
     <title>Gimnasios SNK</title>
-
+    <script>
+      function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+        }
+      function comprobarNotificaciones(){
+        var mensaje = getCookie("mensajeAdmin");
+        if (mensaje!=""){
+          alert("NOTIFICACION DE ADMINISTRADOR:\n"+ mensaje);
+        }
+      }
+    </script>
 </head>
 <body>
 
         <!-- Left Panel -->
 
-    <?php echo file_get_contents('rsc/aside.html'); ?> 
+    <?php echo file_get_contents('rsc/aside.html'); ?>
     <!-- /#left-panel -->
 
     <!-- Left Panel -->
@@ -21,8 +42,8 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-       
-      <?php echo file_get_contents('rsc/header.html'); ?> 
+
+      <?php echo file_get_contents('rsc/header.html'); ?>
 
         <div class="breadcrumbs">
             <div class="page-header float-left">
@@ -58,15 +79,15 @@
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            
+
 
         </div> <!-- .content -->
     </div><!-- /#right-panel -->
 
     <!-- Right Panel -->
 
-    
-    <?php echo file_get_contents('rsc/scripts.html'); ?> 
+
+    <?php echo file_get_contents('rsc/scripts.html'); ?>
 
 </body>
 </html>
