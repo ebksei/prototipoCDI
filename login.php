@@ -31,7 +31,7 @@
         if(pass == passAdmin){
           window.location = "menuAdmin.php";
         }
-        else{ alert("contraseña incorrecta"); }
+        else{ alert("Contraseña incorrecta"); }
       }
       else{
 
