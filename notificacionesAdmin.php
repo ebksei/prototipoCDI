@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js" lang=""> 
+<html class="no-js" lang="">
 <head>
-    
-    <?php echo file_get_contents('rsc/head.html'); ?> 
+
+    <?php echo file_get_contents('rsc/head.html'); ?>
   <link rel="stylesheet" href="assets/css/jquery-ui.css">
 
     <title>SNK - Título</title>
@@ -12,7 +12,7 @@
 
         <!-- Left Panel -->
 
-    <?php echo file_get_contents('rsc/asideadmin.html'); ?> 
+    <?php echo file_get_contents('rsc/asideadmin.html'); ?>
     <!-- /#left-panel -->
 
     <!-- Left Panel -->
@@ -22,8 +22,8 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-       
-      <?php echo file_get_contents('rsc/headeradmin.html'); ?> 
+
+      <?php echo file_get_contents('rsc/headeradmin.html'); ?>
 
         <div class="breadcrumbs">
             <div class="page-header float-left">
@@ -90,8 +90,8 @@
 
     <!-- Right Panel -->
 
-    
-    <?php echo file_get_contents('rsc/scripts.html'); ?> 
+
+    <?php echo file_get_contents('rsc/scripts.html'); ?>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  <script>
       function setCookie(cname,cvalue,exdays) {
@@ -113,15 +113,16 @@
 
           setCookie('eventoNotificacion',evento,1);
           setCookie('fechaNotificacion',fecha,1);
-        }
 
+        }
+        alert(evento + fecha);
         alert('Notificación enviada');
       }
 
 
       $('.form-check-input').click(function(){
         if($(this).val() == 1){
-          $('#destinatario').attr('disabled', true);  
+          $('#destinatario').attr('disabled', true);
         } else{
           $('#destinatario').attr('disabled', false);
 
