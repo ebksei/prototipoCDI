@@ -21,6 +21,7 @@
       var expires = "expires=" + d.toGMTString();
       document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
+
     function comprobarUsuario(){
       var usAdmin = "root@upm.es";
       var passAdmin = "root";
@@ -33,7 +34,7 @@
         else{ alert("Contraseña incorrecta"); }
       }
       else{
-
+        setCookie("ussr", us, 30);
         window.location = "menuUsuario.php";
 
       }

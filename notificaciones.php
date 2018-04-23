@@ -23,14 +23,25 @@
       function comprobarNotificaciones(){
         var evento = getCookie("eventoNotificacion");
         var fecha = getCookie("fechaNotificacion");
+        var dest = getCookie("destinatario");
         var x = document.getElementById("admin");
-        x.style.display === "none"
+        x.style.display === "none";
         if (evento!=""){
-            alert ("Nueva notificacion");
-                x.style.display = "block";
-                document.getElementById("fecha").innerHTML =fecha;
-                document.getElementById("even").innerHTML =evento;
+          if (dest!=""){
+            var ussr = getCookie("ussr");
+            if (dest == ussr){
+              alert ("Nueva notificacion");
+                  x.style.display = "block";
+                  document.getElementById("fecha").innerHTML =fecha;
+                  document.getElementById("even").innerHTML =evento;
+            }
+          }else if (dest ==""){
+              alert ("Nueva notificacion");
+              x.style.display = "block";
+              document.getElementById("fecha").innerHTML =fecha;
+              document.getElementById("even").innerHTML =evento;
           }
+        }
       }
     </script>
 </head>

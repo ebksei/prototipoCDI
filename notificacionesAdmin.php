@@ -117,7 +117,7 @@
           return "";
       }
       function enviar(){
-        if($('#todosSi').is(':checked')){
+
           var evento;
 
           if($('#e1').is(':checked')){ evento = 'Evento 1';}
@@ -127,9 +127,12 @@
 
           var fecha = $('#datepicker').val();
 
-          setCookie('eventoNotificacion',evento,1);
-          setCookie('fechaNotificacion',fecha,1);
+          setCookie('eventoNotificacion',evento,30);
+          setCookie('fechaNotificacion',fecha,30);
 
+        if($('#todosNo').is(':checked')){
+          var us = document.getElementById("destinatario").value;
+          setCookie("destinatario", us, 30);
         }
         alert(evento + fecha);
         alert('Notificación enviada');
