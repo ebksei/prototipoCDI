@@ -28,13 +28,13 @@
       var pass = document.getElementById("pass").value;
       if (us == usAdmin){
         if(pass == passAdmin){
-          window.location = "http://localhost/prototipoCDI/menuAdmin.php";
+          window.location = "menuAdmin.php";
         }
-        else{ alert ="contraseña incorrecta"; }
+        else{ alert("Contraseña incorrecta"); }
       }
       else{
 
-        window.location = "http://localhost/prototipoCDI/menuUsuario.php";
+        window.location = "menuUsuario.php";
 
       }
     }
@@ -73,7 +73,7 @@
                             </label>
 
                         </div>
-                        <button onclick="comprobarUsuario()"  class="btn btn-success btn-flat m-b-30 m-t-30">Log in</button>
+                        <button onclick="comprobarUsuario()" type="button"  class="btn btn-success btn-flat m-b-30 m-t-30">Log in</button>
 
                         <div class="register-link m-t-15 text-center">
                             <p>¿Aun no eres miembro? <a href="registro.html"></br> Click aqui</a></p>
