@@ -61,6 +61,7 @@
             ho = 3;
           }
           setCookie("ho",ho,30);
+          alert("Datos guardados");
       }
       function obtenerdatos(){
         var nombre = getCookie("nombre");
@@ -257,8 +258,7 @@
                       </div>
                     </div>
 
-                          <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar</button>
-                          <button type="submit" class="btn btn-danger btn-flat m-b-30 m-t-30">Cancelar</button>
+                          <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30" onclick="guardarDatos()">Guardar</button>
 
                           <div class="register-link m-t-15 text-center">
                               <p>¿Ya eres miembro de SNK? <a href="login.html">Iniciar Sesión</a></p>
