@@ -40,7 +40,7 @@
                             <div class="card-body">
                                     <div class="form-group">
                                           <label for="nombre" class="control-label mb-1">Nombre</label>
-                                          <input id="nombre" name="nombre" type="text" class="form-control">
+                                          <input id="nombre" name="nombre" type="text" class="form-control" value="Matar Titanes">
                                       </div>
                                       <div class="row form-group">
                                         <div class="col col-md-3"><label class=" form-control-label">Horario</label></div>
@@ -109,15 +109,15 @@
       }
       function guardarDatos(){
           var nombre = document.getElementById("nombre").value;
-          setCookie("actEnombre",nombre,30);
+          setCookie("actTnombre",nombre,30);
           var dia = document.getElementById("dia").value;
-          setCookie("actEdia",dia,30);
+          setCookie("actTdia",dia,30);
           var mes = document.getElementById("mes").value;
-          setCookie("actEmes",mes,30);
+          setCookie("actTmes",mes,30);
           var ano = document.getElementById("ano").value;
-          setCookie("actEano",ano,30);
+          setCookie("actTano",ano,30);
           var descripcion = document.getElementById("descripcion").value;
-          setCookie("actEdescripcion",descripcion,30);
+          setCookie("actTdescripcion",descripcion,30);
 
           if(document.getElementById("ra1").checked){
             var ra=1;
@@ -126,38 +126,50 @@
           }else if(document.getElementById("ra3").checked){
             ra = 3;
           }
-          setCookie("ra",ra,30);
-          var actnueva=1;
-          setCookie("actnueva", actnueva,30);
+          setCookie("raT",ra,30);
+
       }
       function obtenerDatos(){
-        var nombre = getCookie("actEnombre");
-        if(nombre!=""){
-          document.getElementById("nombre").value = nombre;
+        var nombre = getCookie("actTnombre");
+        if(nombre==""){
+          nombre = "Matar titanes";
         }
-        var descripcion = getCookie("actEdescripcion");
-        if(descripcion!=""){
-          document.getElementById("descripcion").value = descripcion;
+        document.getElementById("nombre").value = nombre;
+
+        var descripcion = getCookie("actTdescripcion");
+        if(descripcion==""){
+          descripcion ="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
         }
-        var dia = getCookie("actEdia");
-        if(dia!=""){
-          document.getElementById("dia").value = dia;
+        document.getElementById("descripcion").value = descripcion;
+
+        var dia = getCookie("actTdia");
+        if(dia==""){
+          dia=13;
         }
-        var mes = getCookie("actEmes");
-        if(mes!=""){
+        document.getElementById("dia").value = dia;
+
+        var mes = getCookie("actTmes");
+        if(mes==""){
+          mes= mayo;
+        }
           document.getElementById("mes").value = mes;
+
+        var ano = getCookie("actTano");
+        if(ano==""){
+          ano=2018;
         }
-        var ano = getCookie("actEano");
-        if(ano!=""){
           document.getElementById("ano").value = ano;
-        }
-        var ta = getCookie("ra");
+
+        var ta = getCookie("raT");
         if(ta==1){
           document.getElementById("ra1").checked =true;
         } else if(ta==2){
           document.getElementById("ra2").checked =true;
         }
         else if(ta==3){
+          document.getElementById("ra3").checked =true;
+        }
+        else {
           document.getElementById("ra3").checked =true;
         }
       }
