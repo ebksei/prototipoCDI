@@ -144,6 +144,7 @@
               if(desc==""){
                 desc="Sin definir";
               }
+
               document.getElementById("dExtra").innerHTML =desc;
 
               var precio = getCookie("proExPrecio");
