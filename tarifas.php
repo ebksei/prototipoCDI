@@ -55,7 +55,7 @@
                                     <tbody>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Tarifa Titán</p>
+                                            <p style="text-align:justify" id="titan">Tarifa Titán</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
@@ -66,7 +66,7 @@
                                       </tr>
                                       <tr >
                                         <td>
-                                            <p style="text-align:justify">Tarifa Michoza</p>
+                                            <p style="text-align:justify"id="choza">Tarifa Michoza</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
@@ -77,7 +77,7 @@
                                       </tr>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Tarifa Mikasa</p>
+                                            <p style="text-align:justify" id="casa">Tarifa Mikasa</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
@@ -88,7 +88,7 @@
                                       </tr>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Tarifa Levi</p>
+                                            <p style="text-align:justify" id="levi">Tarifa Levi</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
@@ -137,7 +137,27 @@
           }
           return "";
         }
+        function nombres(){
+          var titan= getCookie("titanNombre");
+          if (titan!=""){
+            document.getElementById("titan").innerHTML ="tarifa " +titan;
+          }
+          var choza= getCookie("chozaNombre");
+          if (choza!=""){
+            document.getElementById("choza").innerHTML ="tarifa " +choza;
+          }
+          var casa= getCookie("casaNombre");
+          if (casa!=""){
+            document.getElementById("casa").innerHTML ="tarifa " +casa;
+          }
+          var levi= getCookie("leviNombre");
+          if (levi!=""){
+            document.getElementById("levi").innerHTML ="tarifa " +levi;
+          }
+
+        }
         function ocultar(){
+          nombres();
           document.getElementById("trE").style.display="none";
           /*document.getElementById('b2').style.visibility = 'hidden';
           document.getElementById('b3').style.visibility = 'hidden';*/
