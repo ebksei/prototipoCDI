@@ -38,7 +38,13 @@
               <div class="card">
                     <div class="card-body">
                       <div class="row form-group">
-                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label">Descripción</label></div>
+                        <div class="col col-md-12">
+                          <label>Código</label>
+                          <input id="codigo" class="form-control" placeholder="Código" >
+                        </div>
+                      </div>
+                      <div class="row form-group">
+                        <div class="col col-md-3"><label for="textarea-input" class=" form-control-label" placeholder="Descripción">Descripción</label></div>
                         <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" class="form-control"></textarea></div>
                       </div>
                       <div class="row form-group">
@@ -79,7 +85,7 @@
                       </div>
                     </div>
                     <div class="card-footer text-center">
-                      <button type="submit" class="btn btn-success btn-sm" style="font-size:1.5em" onclick="guardarCamapana()">
+                      <button type="submit" class="btn btn-success btn-sm" style="font-size:1.5em" onclick="guardarCampana()">
                         <i class="fa fa-dot-circle-o"></i> Confirmar
                       </button>
                     </div>
@@ -99,8 +105,23 @@
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
       }
 
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
       function guardarCampana(){
-        
+        setCookie('campana', $('#codigo').val());
+        alert('Campaña añadida');
       }
     </script>
 
