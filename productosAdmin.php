@@ -74,7 +74,7 @@
                                             <h4 id="nExtra"></h4>
                                             <p id="dExtra" style="text-align:justify"></p>
                                             <div class="botones text-right" style="font-size:2em">
-                                                <p id="pExtra"></p>
+                                                <span id="pExtra"></span>
                                                 <a href="producto1.php"><button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button></a>
                                                 <button type="button" class="btn btn-danger borrar" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
@@ -133,7 +133,7 @@
             document.getElementById('b3').style.visibility = 'hidden';*/
             var nueva = getCookie("prod");
             if (nueva==1){
-              document.getElementById('trE').style.display="block";
+              document.getElementById('trE').style.display="table-row";
               var nombre = getCookie("proExNombre");
               if(nombre==""){
                 nombre="Sin definir";
@@ -151,7 +151,7 @@
               if(precio==""){
                 precio="Sin definir";
               }
-              document.getElementById("pExtra").innerHTML =precio;
+              document.getElementById("pExtra").innerHTML =precio+"€";
             //  alert("n: "+nombre+"\nd: "+ desc+" \npr: "precio);
             }
           }
