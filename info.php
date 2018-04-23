@@ -77,11 +77,11 @@
                     <p class="text-justify"><b>ZONA EXTERIOR:</b> Con...</p>
                     <div class="container">
                       <div class="row">
-                        <div class="col-6"><img src="images/padel.jpg" style="width:150px" alt="padel"/></div>
+                        <div class="col-6" style="margin-bottom:10px"><img src="images/padel.jpg" style="width:150px" alt="padel"/></div>
                         <div class="col-6 text-justify">3 pistas de pádel.</div>
                       </div>
                       <div class="row">
-                        <div class="col-6"><img src="images/tenis.jpg" style="width:150px" alt="tenis"/></div>
+                        <div class="col-6" style="margin-bottom:10px"><img src="images/tenis.jpg" style="width:150px" alt="tenis"/></div>
                         <div class="col-6 text-justify">3 pistas de tenis.</div>
                       </div>
                       <div class="row">

@@ -68,8 +68,8 @@
                             <input type="Phone" class="form-control" placeholder="Phone" id="tel">
                         </div>
                         <div class="form-group">
-                            <label>Cuanta Bancaria</label>
-                            <input type="text" class="form-control" placeholder="Useless" id="banco">
+                            <label>Cuenta Bancaria</label>
+                            <input type="text" class="form-control" placeholder="Número de cuenta" id="banco">
                         </div>
                         <div class="form-group">
                           <h2>Selecciona tarifa</h2>
@@ -77,8 +77,7 @@
                             <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaKawai.jpg" style="height:100px;width:100px" alt="Tarifa Michoza">                            
                             <h3>Tarifa Michoza
                             </h3>
-                            <p>descripcion</p>
-                            <p>precio:</p>
+                            <p>Precio: 19.95€</p>
                               <div class="radio">
                                 <label for="radio1" class="form-check-label ">
                                   <input type="radio" id="ta1" name="ta1" value="option1" class="form-check-input">Michoza
@@ -89,8 +88,7 @@
                             <img class="rounded-circle img-fluid d-block mx-auto" src="images/mikasaTraining.jpg" style="height:100px;width:100px" alt="Tarifa Mikasa">
                             <h3>Tarifa Mikasa
                             </h3>
-                            <p>descripcion</p>
-                            <p>precio:</p>
+                            <p>Precio: 24.95€</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
                                 <input type="radio" id="ta2" name="ta2" value="option1" class="form-check-input">Mikasa
@@ -101,8 +99,7 @@
                             <img class="rounded-circle img-fluid d-block mx-auto" src="images/Levi1.jpeg" style="height:100px;width:100px" alt="Tarifa Levi">
                             <h3>Tarifa Levi
                             </h3>
-                            <p>descripcion</p>
-                            <p>precio:</p>
+                            <p>Precio: 34.95€</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
                                 <input type="radio" id="ta3" name="ta3" value="option1" class="form-check-input">Levi
@@ -113,8 +110,7 @@
                             <img class="rounded-circle img-fluid d-block mx-auto" src="images/titan.png" style="height:100px;width:100px" alt="Tarifa Titánica">
                             <h3>Tarifa Titánica
                             </h3>
-                            <p>descripcion</p>
-                            <p>precio:</p>
+                            <p>Precio:49.95€</p>
                             <div class="radio">
                               <label for="radio1" class="form-check-label ">
                                 <input type="radio" id="ta4" name="ta4" value="option1" class="form-check-input">Titánica
@@ -320,7 +316,6 @@
       }
 
       jQuery(document).ready(function(){
-        alert(getCookie('campana'));
         if(getCookie('campana') != null && getCookie('campana') != ''){
           jQuery('#campana').html(getCookie('campana'));
           jQuery('#campana').show();
