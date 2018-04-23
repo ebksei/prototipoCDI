@@ -59,7 +59,7 @@
                           </tr>
                       </tbody>
                   </table>
-                  <div class="text-center" id="pagar" style="display:none"><button class="btn btn-success">Pagar</button></div>
+                  <div class="text-center" id="pagar" style="display:none"><button class="btn btn-success" onclick="pagar()">Pagar</button></div>
 
 
         </div> <!-- .content -->
@@ -96,6 +96,10 @@
       $('#insignia').hide();
       $('#pagar').hide();
       $('#precio').html('0€');
+    }
+    function pagar(){
+      setCookie('pago','8');
+      window.location.href = "pagar.php";
     }
 
     $(document).ready(function(){
