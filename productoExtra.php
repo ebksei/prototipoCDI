@@ -50,7 +50,7 @@
                   </div>
                   <div class="text-center">
 
-                    <a href="productosAdmin.php"><button onclick="guardarDatos()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Crear Producto</button></a>
+                    <a href="productosAdmin.php"<button onclick="guardarDatos()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Crear Producto</button></a>
                   </div>
 
                 </div>
@@ -92,7 +92,6 @@
           setCookie("proExDescripcion",descripcion,30);
           var precio = document.getElementById("precio").value;
           setCookie("proExPrecio",precio,30);
-          var suplemento = document.getElementById("suplemento").value;
           var nueva = 1;
           setCookie("prod", nueva,30);
       }
@@ -110,7 +109,7 @@
         if(precio!=""){
           document.getElementById("precio").value = precio;
         }
-      
+
 
       }
 

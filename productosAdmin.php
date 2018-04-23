@@ -5,7 +5,6 @@
     <?php echo file_get_contents('rsc/head.html'); ?>
 
     <title>SNK - Título</title>
-
 </head>
 <body onload="ocultar()">
 
@@ -72,10 +71,10 @@
                                             <div class="productoImg " style="background-image:url('')">Imagen</div>
                                         </td>
                                         <td>
-                                            <h4 id="nombreExtra"></h4>
-                                            <p id="descripcionExtra" style="text-align:justify"></p>
+                                            <h4 id="nExtra"></h4>
+                                            <p id="dExtra" style="text-align:justify"></p>
                                             <div class="botones text-right" style="font-size:2em">
-                                                <p id="precioExtra"></p>
+                                                <p id="pExtra"></p>
                                                 <a href="producto1.php"><button type="button" class="btn btn-warning" style="font-size:1em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button></a>
                                                 <button type="button" class="btn btn-danger borrar" style="font-size:1em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
@@ -101,49 +100,61 @@
           jQuery('#bootstrap-data-table_length').parent().hide();
           jQuery('#bootstrap-data-table_info').hide();
         } );
-        
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-      function obtenerdatos(){
-        var nombre = getCookie("InsNombre");
-        if(nombre!=""){
-          document.getElementById("InsNombre").innerHTML = nombre;
-        }
 
-        var descripcion = getCookie("InsDescripcion");
-        if(descripcion!=""){
-          document.getElementById("insDescripcion").innerHTML = descripcion;
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
         }
-      }
-      function ocultar(){
+          function obtenerdatos(){
+            var nombre = getCookie("InsNombre");
+            if(nombre!=""){
+              document.getElementById("InsNombre").innerHTML = nombre;
+            }
 
-        document.getElementById("trE").style.display="none";
-        /*document.getElementById('b2').style.visibility = 'hidden';
-        document.getElementById('b3').style.visibility = 'hidden';*/
-        var nueva = getCookie("prod");
-        var x = document.getElementById("extra");
-        if (nueva==1){
-          document.getElementById('trE').style.display="block";
-          var nombre = getCookie("proExNombre");
-          document.getElementById("nombreExtra").innerHTML =nombre;
-          var desc = getCookie("proExDescripcion");
-          document.getElementById("DescripcionExtra").innerHTML =desc;
-          var precio = getCookie("proExPrecio");
-          document.getElementById("PrecioExtra").innerHTML =precio;
-        }
-      }
+            var descripcion = getCookie("InsDescripcion");
+            if(descripcion!=""){
+              document.getElementById("insDescripcion").innerHTML = descripcion;
+            }
+          }
+          function ocultar(){
+
+            document.getElementById("trE").style.display="none";
+            /*document.getElementById('b2').style.visibility = 'hidden';
+            document.getElementById('b3').style.visibility = 'hidden';*/
+            var nueva = getCookie("prod");
+            if (nueva==1){
+              document.getElementById('trE').style.display="block";
+              var nombre = getCookie("proExNombre");
+              if(nombre==""){
+                nombre="Sin definir";
+              }
+
+              document.getElementById("nExtra").innerHTML =nombre;
+              var desc = getCookie("proExDescripcion");
+              if(desc==""){
+                desc="Sin definir";
+              }
+              document.getElementById("dExtra").innerHTML =desc;
+
+              var precio = getCookie("proExPrecio");
+              if(precio==""){
+                precio="Sin definir";
+              }
+              document.getElementById("pExtra").innerHTML =precio;
+            //  alert("n: "+nombre+"\nd: "+ desc+" \npr: "precio);
+            }
+          }
+
 
       $(document).ready(function(){
         $('.borrar').click(function(){
