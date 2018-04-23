@@ -77,11 +77,11 @@
                                       </tr>
                                       <tr>
                                         <td>
-                                            <p style="text-align:justify">Tarifa Micasa</p>
+                                            <p style="text-align:justify">Tarifa Mikasa</p>
                                         </td>
                                         <td>
                                             <div class="botones text-center" style="margin-bottom:10px;margin-top:10px">
-                                                <a href="tarifaMicasa.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
+                                                <a href="tarifaMikasa.php"><button type="button" class="btn btn-warning" style="font-size:2em;margin:0px 10px 10px 10px"><i class="fa fa-pencil"></i></button><a>
                                                 <button type="button" class="btn btn-danger borrar" style="font-size:2em;margin:0px 10px 10px 0px"><i class="fa fa-times-circle"></i></button>
                                             </div>
                                         </td>
@@ -149,7 +149,7 @@
             document.getElementById("nuevaNombre").innerHTML ="Tarifa "+nombre;
           }
         }
-        
+
         jQuery(document).ready(function() {
           jQuery('#bootstrap-data-table').DataTable();
           jQuery('#bootstrap-data-table_length').parent().hide();
