@@ -28,7 +28,7 @@
         <div class="breadcrumbs">
             <div class="page-header float-left">
                 <div class="page-title">
-                    <h1>Nueva Notificación</h1>
+                    <h1><i class="fa fa-bell" style="margin-right:20px"></i>Nueva Notificación</h1>
                 </div>
             </div>
         </div>
@@ -43,12 +43,32 @@
                                 <input type="text" class="form-control" id="datepicker"></p>
                             </div>
                             <div class="form-group">
+                              <label>Evento:</label>
+                                <div class="form-check">
+                                <div class="radio">
+                                  <label for="radio1" class="form-check-label ">
+                                    <input type="radio" id="e1" name="radios" value="option1" class="check" selected>Evento 1
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label for="radio2" class="form-check-label ">
+                                    <input type="radio" id="e2" name="radios" value="option2" class="check">Evento 2
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label for="radio3" class="form-check-label ">
+                                    <input type="radio" id="e3" name="radios" value="option3" class="check">Evento 3
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
                                 <label>Enviar a todos los miembros</label>
                                 <div class="form-check-inline form-check">
-                                    <label for="inline-radio1" class="form-check-label " style="margin-right:10px">
+                                    <label for="todosSi" class="form-check-label " style="margin-right:10px">
                                       <input type="radio" id="todosSi" name="todos" value="1" class="form-check-input">Sí
                                     </label>
-                                    <label for="inline-radio2" class="form-check-label ">
+                                    <label for="todosNo" class="form-check-label ">
                                       <input type="radio" id="todosNo" name="todos" value="0" class="form-check-input" checked="checked">No
                                     </label>
                               </div>
@@ -56,6 +76,9 @@
                             <div class="form-group">
                                 <label>Destinatario</label></br>
                                 <input type="text" class="form-control" id="destinatario"></p>
+                            </div>
+                             <div class="text-center">
+                              <button onclick="enviar()" type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Enviar</button>
                             </div>
                         </div>
                     </div>
@@ -77,6 +100,24 @@
         var expires = "expires=" + d.toGMTString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
       }
+      function enviar(){
+        if($('#todosSi').is(':checked')){
+          var evento;
+
+          if($('#e1').is(':checked')){ evento = 'Evento 1';}
+          else if($('#e2').is(':checked')){ evento = 'Evento 2';}
+          else if($('#e3').is(':checked')){ evento = 'Evento 3';}
+          else if($('#e4').is(':checked')){ evento = 'Evento 4';}
+
+          var fecha = $('#datepicker').val();
+
+          setCookie('eventoNotificacion',evento,1);
+          setCookie('fechaNotificacion',fecha,1);
+        }
+
+        alert('Notificación enviada');
+      }
+
 
       $('.form-check-input').click(function(){
         if($(this).val() == 1){

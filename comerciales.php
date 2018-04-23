@@ -36,10 +36,10 @@
 
             <div class="login-form">
                 <div style="margin-bottom:20px">
-                   <a  href="campana.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-dribbble" style="margin-right:20px"></i>Campañas</button></a></br>
+                   <a  href="campana.php"><button type="button" class="btn btn-success btn-flat m-b-30 m-t-30">Campañas</button></a></br>
                 </div>
                 <div style="margin-bottom:20px">
-                    <a  href="notificacionesAdmin.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-briefcase" style="margin-right:20px"></i>Notificaciones</button></a></br>
+                    <a  href="notificacionesAdmin.php"><button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30"><i class="fa fa-bell" style="margin-right:20px"></i>Notificaciones</button></a></br>
                 </div>
             </div>
 
