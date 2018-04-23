@@ -109,8 +109,10 @@
                           <label>Suplemento Horario</label>
                           <input id="suplemento" class="form-control" placeholder="10€ "  >
                       </div>
+                            <div class="text-center">
+                              <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
+                            </div>
                     </div>
-                    <a href="tarifas.php"><button onclick="guardarDatos()" type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Guardar Cambios</button></a>
                   </div>
                 </div>
               </div>
