@@ -31,7 +31,6 @@
           window.location = "http://localhost/prototipoCDI/menuAdmin.php";
         }
         else{ alert ="contraseña incorrecta"; }
-        window.location = "http://localhost/prototipoCDI/menuAdmin.php";
       }
       else{
 
@@ -74,7 +73,7 @@
                             </label>
 
                         </div>
-                        <button onclick="comprobarUsuario()" type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Log in</button>
+                        <button onclick="comprobarUsuario()"  class="btn btn-success btn-flat m-b-30 m-t-30">Log in</button>
 
                         <div class="register-link m-t-15 text-center">
                             <p>¿Aun no eres miembro? <a href="registro.html"></br> Click aqui</a></p>
